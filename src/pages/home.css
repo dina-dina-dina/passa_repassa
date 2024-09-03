@@ -1,0 +1,33 @@
+body {
+    background-color: purple;
+    margin: 15px;
+}
+
+.bloco {
+    background-color: white;
+    margin: auto;
+    height: 635px;
+    width: 1460px;
+}
+
+/*
+Config padrão das abas em cima
+*/
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    padding-top: 75px;
+}
+
+.sublogo{
+    display: flex;
+    justify-content: center;
+}
+
+.sublogo > img{
+    padding: 60px 40px 0px 40px;
+}
