@@ -15,8 +15,10 @@ client.on("message", (topic, message) => {
   client.end();
 });
 
-return(
+function mqttTeste(){
+  return(
     <div></div>
 )
+}
 
 export default mqttTeste
