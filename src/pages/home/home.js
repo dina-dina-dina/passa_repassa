@@ -2,10 +2,10 @@
 import "./home.css"
 
 // Importar Imagens
-import Logo from "../images/logo.png"
-import Organizacao from "../images/organizacao.png"
-import Apoio from "../images/apoio.png"
-import Patrocinio from "../images/patrocinio.png"
+import Logo from "../../images/logo.png"
+import Organizacao from "../../images/organizacao.png"
+import Apoio from "../../images/apoio.png"
+import Patrocinio from "../../images/patrocinio.png"
 
 // Em arquivo novo, lembra de importar no routes e no index
 function Home(){

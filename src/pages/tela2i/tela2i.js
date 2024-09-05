@@ -2,13 +2,13 @@
 import "./tela2i.css"
 
 // Importar Imagens
-import Logo from "../images/logo.png"
-import Organizacao from "../images/organizacao.png"
-import Apoio from "../images/apoio.png"
-import Patrocinio from "../images/patrocinio.png"
-import Time1q from "../images/time1q.png"
-import Time2q from "../images/time2q.png"
-import Participante from "../images/participanteXX.png"
+import Logo from "../../images/logo.png"
+import Organizacao from "../../images/organizacao.png"
+import Apoio from "../../images/apoio.png"
+import Patrocinio from "../../images/patrocinio.png"
+import Time1q from "../../images/time1q.png"
+import Time2q from "../../images/time2q.png"
+import Participante from "../../images/participanteXX.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
