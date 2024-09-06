@@ -1,28 +1,39 @@
-import mqtt from "mqtt"
-const client = mqtt.connect("mqtt://127.0.0.1:8080");
+import mqtt from "mqtt";
+import { useEffect, useState } from "react";
 
-client.on("connect", () => {
-  console.log("Entra aqui?")
-  client.subscribe("presence", (err) => {
-    if (!err) {
-      client.publish("presence", "Hello mqtt");
-    } else {console.log("FOI")}
-  });
-});
+function MqttTeste() {
+  const [message, setMessage] = useState("");
+  const [isConnected, setIsConnected] = useState(false);
+  const brokerUrl = "mqtt://127.0.0.1:8080";
 
-// client.on("message", (topic, message) => {
-//   console.log("Entra aqui?")
-//   // message is Buffer
-//   console.log(message.toString());
-//   client.end();
-// });
+  useEffect(() => {
+    const client = mqtt.connect(brokerUrl);
 
-function mqttTeste(){
+    client.on("connect", () => {
+      console.log("Entra aqui?");
+      setIsConnected(true);
+      client.subscribe("esp32/button", (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("Funcionando");
+        }
+      });
+    });
+
+    // Evento quando receber uma mensagem
+    client.on("message", (topic, payload) => {
+      console.log(
+        `Mensagem recebida no tópico ${topic}: ${payload.toString()}`
+      );
+      setMessage(payload.toString()); // Atualiza o estado com a mensagem recebida
+    });
+
+  }, []);
+
   return(
-    <div></div>
-)
+    <p>Teste</p>
+  )
 }
 
-
-
-export default mqttTeste
+export default MqttTeste;
