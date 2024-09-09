@@ -1,7 +1,5 @@
 // Importar Estilo
-import "./tela2.css"
-
-import { useEffect, useState } from 'react';
+import "./tela2i6.css"
 
 // Importar Imagens
 import Logo from "../../images/logo.png"
@@ -10,68 +8,11 @@ import Apoio from "../../images/apoio.png"
 import Patrocinio from "../../images/patrocinio.png"
 import Time1q from "../../images/time1q.png"
 import Time2q from "../../images/time2q.png"
-
+import Participante6 from "../../images/participante6.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
-function Tela2(){
-
-    let [botao1, setBotao1] = useState();
-    let [botao2, setBotao2] = useState();
-    let [botao3, setBotao3] = useState();
-    let [botao4, setBotao4] = useState();
-    let [botao5, setBotao5] = useState();
-    let [botao6, setBotao6] = useState();
-    let [botaoRecebido, setBotaoRecebido] = useState();
-
-    useEffect(() => {
-        if(botaoRecebido == "1"){
-            setBotao1(true)
-        }
-        if(botaoRecebido == "2"){
-            setBotao2(true)
-        }
-        if(botaoRecebido == "3"){
-            setBotao3(true)
-        }
-        if(botaoRecebido == "4"){
-            setBotao4(true)
-        }
-        if(botaoRecebido == "5"){
-            setBotao5(true)
-        }
-        if(botaoRecebido == "6"){
-            setBotao6(true)
-        }
-    })
-
-
-    useEffect(() => { 
-        if(botao1 == true){
-            window.location.href = "/2i1"
-        }
-        if(botao2 == true){
-            window.location.href = "/2i2"
-        }
-        if(botao3 == true){
-            window.location.href = "/2i3"
-        }
-        if(botao4 == true){
-            window.location.href = "/2i4"   
-        }
-        if(botao5 == true){
-            window.location.href = "/2i5"
-        }
-        if(botao6 == true){
-            window.location.href = "/2i6"
-        }
-    })  
-    
-    function funcaoBotao(){
-        console.log("funcionando", botaoRecebido, botao2)
-        setBotaoRecebido("2")
-    }
-
+function Tela2i6(){
     return(
         <div class="bloco">
         <div id="topo">
@@ -103,7 +44,6 @@ function Tela2(){
                 <p>Pontos 2</p>
             </div>
             <div class="time">
-                <button onClick = {funcaoBotao} className="botao-lp" id="botao3">"botao"</button>
                 <img class= "time" src={Time2q} alt="" height="175px" width="175px"></img>
                 <p>Time 2</p>
                 <p>Universidade B</p>
@@ -111,9 +51,13 @@ function Tela2(){
         </div>
         <div class="perg">
             <p>Pergunta Geral 1</p>
+            <div class="fim">
+                <img src={Participante6} alt="" height="150px" width="131px"></img>
+                <p>Participante 6</p>
+            </div>
         </div>
     </div>
     )
 }
 
-export default Tela2
+export default Tela2i6
