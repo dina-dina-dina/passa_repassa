@@ -1,5 +1,5 @@
 // Importar Estilo
-import "./tela2.css"
+import "./perguntaGeral.css"
 
 import { useEffect, useState } from 'react';
 
@@ -14,7 +14,7 @@ import Time2q from "../../images/time2q.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
-function Tela2(){
+function PerguntaGeral(){
 
     let [botao1, setBotao1] = useState();
     let [botao2, setBotao2] = useState();
@@ -48,22 +48,22 @@ function Tela2(){
 
     useEffect(() => { 
         if(botao1 == true){
-            window.location.href = "/2i1"
+            window.location.href = "/pergunta/geral/1"
         }
         if(botao2 == true){
-            window.location.href = "/2i2"
+            window.location.href = "/pergunta/geral/2"
         }
         if(botao3 == true){
-            window.location.href = "/2i3"
+            window.location.href = "/pergunta/geral/3"
         }
         if(botao4 == true){
-            window.location.href = "/2i4"   
+            window.location.href = "/pergunta/geral/4"   
         }
         if(botao5 == true){
-            window.location.href = "/2i5"
+            window.location.href = "/pergunta/geral/5"
         }
         if(botao6 == true){
-            window.location.href = "/2i6"
+            window.location.href = "/pergunta/geral/6"
         }
     })  
     
@@ -116,4 +116,4 @@ function Tela2(){
     )
 }
 
-export default Tela2
+export default PerguntaGeral

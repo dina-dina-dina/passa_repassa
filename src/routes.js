@@ -6,37 +6,62 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/home/home.js";
-import Tela1 from "./pages/tela1/tela1.js";
-import Tela2 from "./pages/tela2/tela2.js";
-import Tela2i1 from "./pages/tela2i1/tela2i1.js";
-import Tela2i2 from "./pages/tela2i2/tela2i2.js";
-import Tela2i3 from "./pages/tela2i3/tela2i3.js";
-import Tela2i4 from "./pages/tela2i4/tela2i4.js";
-import Tela2i5 from "./pages/tela2i5/tela2i5.js";
-import Tela2i6 from "./pages/tela2i6/tela2i6.js";
-import Tela3 from "./pages/tela3/tela3.js";
-import Tela3i from "./pages/tela3i/tela3i.js";
-import Tela4 from "./pages/tela4/tela4.js";
+
+import Placar from "./pages/placar/placar.js";
+
+import PerguntaGeral from "./pages/perguntaGeral/perguntaGeral.js";
+import PerguntaGeralBotao1 from "./pages/perguntaGeralBotao1/perguntaGeralBotao1.js";
+import PerguntaGeralBotao2 from "./pages/perguntaGeralBotao2/perguntaGeralBotao2.js";
+import PerguntaGeralBotao3 from "./pages/perguntaGeralBotao3/perguntaGeralBotao3.js";
+import PerguntaGeralBotao4 from "./pages/perguntaGeralBotao4/perguntaGeralBotao4.js";
+import PerguntaGeralBotao5 from "./pages/perguntaGeralBotao5/perguntaGeralBotao5.js";
+import PerguntaGeralBotao6 from "./pages/perguntaGeralBotao6/perguntaGeralBotao6.js";
+
+import PerguntaBonus from "./pages/perguntaBonus/perguntaBonus.js";
+import PerguntaBonusBotao1 from "./pages/perguntaBonusBotao1/perguntaBonusBotao1.js";
+import PerguntaBonusBotao2 from "./pages/perguntaBonusBotao2/perguntaBonusBotao2.js";
+import PerguntaBonusBotao3 from "./pages/perguntaBonusBotao3/perguntaBonusBotao3.js";
+import PerguntaBonusBotao4 from "./pages/perguntaBonusBotao4/perguntaBonusBotao4.js";
+import PerguntaBonusBotao5 from "./pages/perguntaBonusBotao5/perguntaBonusBotao5.js";
+import PerguntaBonusBotao6 from "./pages/perguntaBonusBotao6/perguntaBonusBotao6.js";
+
+import PerguntaFigura from "./pages/perguntaFigura/perguntaFigura.js";
+
 import MqttTeste from "./pages/testemqtt/teste.js";
 import Testeredirect1 from "./pages/testeredirect1/testeredirect1.js" ;
 import Testeredirect2 from "./pages/testeredirect2/testeredirect2.js";
+
+import Lobby from "./pages/lobby/lobby.js"
+
 
 function Rotas(){
     return (
         <Router>
           <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/1" element={<Tela1/>} />
-            <Route path="/2" element={<Tela2/>} />
-            <Route path="/2i1" element={<Tela2i1/>} />
-            <Route path="/2i2" element={<Tela2i2/>} />
-            <Route path="/2i3" element={<Tela2i3/>} />
-            <Route path="/2i4" element={<Tela2i4/>} />
-            <Route path="/2i5" element={<Tela2i5/>} />
-            <Route path="/2i6" element={<Tela2i6/>} />
-            <Route path="/3" element={<Tela3/>} />
-            <Route path="/3i" element={<Tela3i/>} />
-            <Route path="/4" element={<Tela4/>} />
+            <Route path="/" element={<Lobby/>} />
+
+            <Route path="/home" element={<Home/>} />
+
+            <Route path="/placar" element={<Placar/>} />
+
+            <Route path="/pergunta/geral" element={<PerguntaGeral/>} />
+            <Route path="/pergunta/geral/1" element={<PerguntaGeralBotao1/>} />
+            <Route path="/pergunta/geral/2" element={<PerguntaGeralBotao2/>} />
+            <Route path="/pergunta/geral/3" element={<PerguntaGeralBotao3/>} />
+            <Route path="/pergunta/geral/4" element={<PerguntaGeralBotao4/>} />
+            <Route path="/pergunta/geral/5" element={<PerguntaGeralBotao5/>} />
+            <Route path="/pergunta/geral/6" element={<PerguntaGeralBotao6/>} />
+
+            <Route path="/pergunta/bonus" element={<PerguntaBonus/>} />
+            <Route path="/pergunta/bonus/1" element={<PerguntaBonusBotao1/>} />
+            <Route path="/pergunta/bonus/2" element={<PerguntaBonusBotao2/>} />
+            <Route path="/pergunta/bonus/3" element={<PerguntaBonusBotao3/>} />
+            <Route path="/pergunta/bonus/4" element={<PerguntaBonusBotao4/>} />
+            <Route path="/pergunta/bonus/5" element={<PerguntaBonusBotao5/>} />
+            <Route path="/pergunta/bonus/6" element={<PerguntaBonusBotao6/>} />
+
+            <Route path="/pergunta/figura" element={<PerguntaFigura/>} />
+
             <Route path="/5" element={<MqttTeste/>} />
             <Route path="/6/1" element={<Testeredirect1/>} />
             <Route path="/6/2" element={<Testeredirect2/>} />

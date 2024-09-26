@@ -1,5 +1,5 @@
 // Importar Estilo
-import "./tela3.css"
+import "./perguntaFigura.css"
 
 // Importar Imagens
 import Logo from "../../images/logo.png"
@@ -8,12 +8,13 @@ import Apoio from "../../images/apoio.png"
 import Patrocinio from "../../images/patrocinio.png"
 import Time1q from "../../images/time1q.png"
 import Time2q from "../../images/time2q.png"
+import figperg from "../../images/figperg.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
-function Tela3(){
+function PerguntaFigura(){
     return(
-    <div class="bloco">
+        <div class="bloco">
         <div id="topo">
             <div id="esquerda">
                 <img src={Logo} alt="" height="100px"></img>
@@ -27,9 +28,9 @@ function Tela3(){
         <div id="tit">
             <h1>Jogo XX</h1>
         </div>
-        <div id="mid">
-            <div class="time">
-                <img class="time" src={Time1q} alt="" height="175px" width="175px"></img>
+        <div id="esquerda">
+            <div class="t1">
+                <img src={Time1q} alt="" height="100px"></img>
                 <p>Time 1</p>
                 <p>Universidade A</p>
             </div>
@@ -42,17 +43,21 @@ function Tela3(){
             <div class="pontos">
                 <p>Pontos 2</p>
             </div>
-            <div class="time">
-                <img class= "time" src={Time2q} alt="" height="175px" width="175px"></img>
-                <p>Time 2</p>
-                <p>Universidade B</p>
+            <div class="t2">
+                <img src={Time2q} alt="" height="100px"></img>
+                <p>Time 1</p>
+                <p>Universidade A</p>
             </div>
         </div>
-        <div class="perg">
-            <p>Pergunta Bônus 1</p>
+        <div id="perg">
+            <p>Pergunta Bonus Y</p>
+        </div>
+        <div id="dir">
+            <img src={figperg} alt="" width="400px"></img>
+            <p>Figura da Pergunta XPTO</p>
         </div>
     </div>
     )
 }
 
-export default Tela3
+export default PerguntaFigura

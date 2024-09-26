@@ -1,5 +1,5 @@
 // Importar Estilo
-import "./tela2i3.css"
+import "./perguntaBonusBotao5.css"
 
 // Importar Imagens
 import Logo from "../../images/logo.png"
@@ -8,13 +8,13 @@ import Apoio from "../../images/apoio.png"
 import Patrocinio from "../../images/patrocinio.png"
 import Time1q from "../../images/time1q.png"
 import Time2q from "../../images/time2q.png"
-import Participante3 from "../../images/participante3.png"
+import Participante1 from "../../images/participante1.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
-function Tela2i3(){
+function PerguntaBonusBotao5(){
     return(
-        <div class="bloco">
+    <div class="bloco">
         <div id="topo">
             <div id="esquerda">
                 <img src={Logo} alt="" height="100px"></img>
@@ -50,14 +50,14 @@ function Tela2i3(){
             </div>
         </div>
         <div class="perg">
-            <p>Pergunta Geral 1</p>
+            <p>Pergunta Bônus 1</p>
             <div class="fim">
-                <img src={Participante3} alt="" height="150px" width="131px"></img>
-                <p>Participante 3</p>
+                <img src={Participante1} alt="" height="150px" width="131px"></img>
+                <p>Participante XX</p>
             </div>
         </div>
     </div>
     )
 }
 
-export default Tela2i3
+export default PerguntaBonusBotao5

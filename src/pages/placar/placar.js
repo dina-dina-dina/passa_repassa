@@ -1,23 +1,22 @@
 // Importar Estilo
-import "./tela2i6.css"
+import "./placar.css"
 
 // Importar Imagens
 import Logo from "../../images/logo.png"
 import Organizacao from "../../images/organizacao.png"
 import Apoio from "../../images/apoio.png"
 import Patrocinio from "../../images/patrocinio.png"
-import Time1q from "../../images/time1q.png"
-import Time2q from "../../images/time2q.png"
-import Participante6 from "../../images/participante6.png"
+import Time1 from "../../images/time1.png"
+import Time2 from "../../images/time2.png"
 
 
 // Em arquivo novo, lembra de importar no routes e no index
-function Tela2i6(){
+function Tela1(){
     return(
-        <div class="bloco">
+    <div class="bloco">
         <div id="topo">
             <div id="esquerda">
-                <img src={Logo} alt="" height="100px"></img>
+                <img id="logo" src={Logo} alt="" height="100px"></img>
                 <img src={Organizacao} alt="" height="80px"></img>
             </div>
             <div id="direita">
@@ -30,34 +29,21 @@ function Tela2i6(){
         </div>
         <div id="mid">
             <div class="time">
-                <img class="time" src={Time1q} alt="" height="175px" width="175px"></img>
+                <img class="time" src={Time1} alt="" height="250px"></img>
                 <p>Time 1</p>
                 <p>Universidade A</p>
-            </div>
-            <div class="pontos">
-                <p>Pontos 1</p>
             </div>
             <div id="X">
                 <p>X</p>
             </div>
-            <div class="pontos">
-                <p>Pontos 2</p>
-            </div>
             <div class="time">
-                <img class= "time" src={Time2q} alt="" height="175px" width="175px"></img>
+                <img class= "time" src={Time2} alt="" height="250px"></img>
                 <p>Time 2</p>
                 <p>Universidade B</p>
-            </div>
-        </div>
-        <div class="perg">
-            <p>Pergunta Geral 1</p>
-            <div class="fim">
-                <img src={Participante6} alt="" height="150px" width="131px"></img>
-                <p>Participante 6</p>
             </div>
         </div>
     </div>
     )
 }
 
-export default Tela2i6
+export default Tela1

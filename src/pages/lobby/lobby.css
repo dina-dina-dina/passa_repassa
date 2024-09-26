@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(91, 1, 91) 75%, rgb(54, 0, 54));
+}
+
+.blocolobby{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h1{
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+header > h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: antiquewhite;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.botoes{
+    display: flex;
+    width: 500px;
+    background-color: white;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes > button {
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 0.75em;
+}
+
+.imagens{
+    padding: 10px;
+    display: flex;
+    max-width: 600px;
+    background-color: white;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
