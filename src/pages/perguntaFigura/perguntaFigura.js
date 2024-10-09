@@ -13,6 +13,27 @@ import figperg from "../../images/figperg.png"
 
 // Em arquivo novo, lembra de importar no routes e no index
 function PerguntaFigura(){
+    document.addEventListener('keyup', function(event) {
+        if(event.key === "l"){
+            window.location.href = "/"
+        }
+        if(event.key === "h"){
+            window.location.href = "/home"
+        }
+        if(event.key === "g"){
+            window.location.href = "/pergunta/geral"
+        }
+        if(event.key === "b"){
+            window.location.href = "/pergunta/bonus"
+        }
+        if(event.key === "f"){
+            window.location.href = "/pergunta/figura"
+        }
+        if(event.key === "p"){
+            window.location.href = "/placar"
+        }
+    });
+
     return(
         <div class="bloco">
         <div id="topo">

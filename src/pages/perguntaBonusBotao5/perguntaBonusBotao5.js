@@ -13,6 +13,31 @@ import Participante1 from "../../images/participante1.png"
 
 // Em arquivo novo, lembra de importar no routes e no index
 function PerguntaBonusBotao5(){
+    
+    document.addEventListener('keyup', function(event) {
+        if(event.key === "0"){
+            window.location.href = "/pergunta/bonus"
+        }
+        if(event.key === "l"){
+            window.location.href = "/"
+        }
+        if(event.key === "h"){
+            window.location.href = "/home"
+        }
+        if(event.key === "g"){
+            window.location.href = "/pergunta/geral"
+        }
+        if(event.key === "b"){
+            window.location.href = "/pergunta/bonus"
+        }
+        if(event.key === "f"){
+            window.location.href = "/pergunta/figura"
+        }
+        if(event.key === "p"){
+            window.location.href = "/pergunta/placar"
+        }
+    });
+
     return(
     <div class="bloco">
         <div id="topo">
