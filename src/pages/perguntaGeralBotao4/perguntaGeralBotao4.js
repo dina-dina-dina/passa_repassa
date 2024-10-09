@@ -36,7 +36,7 @@ function PerguntaGeralBotao4(){
             window.location.href = "/pergunta/figura"
         }
         if(event.key === "p"){
-            window.location.href = "/pergunta/placar"
+            window.location.href = "/placar"
         }
     });
 
