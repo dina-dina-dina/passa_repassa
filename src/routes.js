@@ -28,6 +28,7 @@ import PerguntaBonusBotao6 from "./pages/perguntaBonusBotao6/perguntaBonusBotao6
 import PerguntaFigura from "./pages/perguntaFigura/perguntaFigura.js";
 
 import MqttTeste from "./pages/testemqtt/teste.js";
+import MqttTeste2 from "./pages/perguntaGeralMqtt/mqtt.js";
 import Testeredirect1 from "./pages/testeredirect1/testeredirect1.js" ;
 import Testeredirect2 from "./pages/testeredirect2/testeredirect2.js";
 
@@ -61,6 +62,8 @@ function Rotas(){
             <Route path="/pergunta/bonus/6" element={<PerguntaBonusBotao6/>} />
 
             <Route path="/pergunta/figura" element={<PerguntaFigura/>} />
+
+            <Route path="/testeMQTT" element={<MqttTeste2/>} />
 
             <Route path="/5" element={<MqttTeste/>} />
             <Route path="/6/1" element={<Testeredirect1/>} />
