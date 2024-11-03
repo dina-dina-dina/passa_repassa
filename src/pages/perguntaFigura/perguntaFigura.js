@@ -47,7 +47,7 @@ function PerguntaFigura(){
             </div>
         </div>
         <div id="tit">
-            <h1>Jogo XX</h1>
+            <h1>Jogo 11</h1>
         </div>
         <div id="esquerda">
             <div class="t1">
